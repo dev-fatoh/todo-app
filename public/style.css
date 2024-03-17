@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+}
+
+.header {
+  width: 100%;
+  background: #181818;
+  height: 20vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  position: relative;
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+form input {
+  padding: 0.7em;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+form a {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0.7em;
+  background: teal;
+}
+
+.todos-list {
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+ul {
+  width: 80%;
+  list-style: none;
+
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+
+  gap: 1rem;
+}
+
+ul li {
+  padding: 2rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+ul li a {
+  font-size: 1.7rem;
+  color: green;
+  font-style: italic;
+  padding: 0.4em;
+}

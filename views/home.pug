@@ -1,0 +1,10 @@
+extends layout 
+
+block content 
+  .todos-list
+    ul 
+      for todo in todos 
+        li 
+          span #{todo.text}
+          |
+          a(href="/todos/"+todo.id) Edit  
