@@ -73,17 +73,21 @@ ul {
 
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
+  place-items: center;
 
   gap: 1rem;
 }
 
 ul li {
   padding: 2rem;
+  width: 100%;
   border: 1px solid #333;
   border-radius: 6px;
+
   display: flex;
+  background: #fff;
   align-items: center;
   justify-content: space-between;
   gap: 4rem;

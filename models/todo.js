@@ -3,6 +3,9 @@ module.exports = (sequelize, DataTypes) => {
     text: {
       type: DataTypes.STRING,
       allowNull: false,
+      validate: {
+        notEmpty: true,
+      },
     },
   });
   return Todo;

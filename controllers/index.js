@@ -15,7 +15,9 @@ exports.show_todos = (req, res) => {
 exports.add_todos = (req, res) => {
   db.Todo.create({
     text: req.body.text,
-  }).then(() => res.redirect("/"));
+  })
+    .then(() => res.redirect("/"))
+    .catch((err) => res.send(err.message));
 };
 
 exports.find_todo = (req, res) => {
@@ -40,5 +42,7 @@ exports.edit_todos = (req, res) => {
         id: req.params.id,
       },
     },
-  ).then(() => res.redirect("/"));
+  )
+    .then(() => res.redirect("/"))
+    .catch((err) => res.send(err.message));
 };
