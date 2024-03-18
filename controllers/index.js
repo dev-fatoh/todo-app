@@ -40,5 +40,5 @@ exports.edit_todos = (req, res) => {
         id: req.params.id,
       },
     },
-  ).then(() => res.redirect("/todos/" + req.params.id));
+  ).then(() => res.redirect("/"));
 };

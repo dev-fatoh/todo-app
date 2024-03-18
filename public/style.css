@@ -10,32 +10,45 @@ html {
 
 body {
   width: 100vw;
+  background: #171823;
 }
 
 .header {
-  width: 100%;
-  background: #181818;
-  height: 20vh;
+  position: relative;
+  background: url("./imeges/bg-desktop-light.jpg") no-repeat;
+  background-size: cover;
+  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+h1 {
+  color: #fff;
+  letter-spacing: 1rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 a {
   text-decoration: none;
 }
 
-form {
-  position: relative;
+.header form {
   color: #fff;
-  width: 80%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  width: 600px;
 }
 
 form input {
   padding: 0.7em;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 3rem;
   font-size: 1.4rem;
+  border: none;
+}
+
+form input[type="text"] {
+  width: 80%;
 }
 
 form a {
@@ -81,4 +94,29 @@ ul li a {
   color: green;
   font-style: italic;
   padding: 0.4em;
+}
+
+.edit-todo {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 30%;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+
+.edit-todo form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edit-todo input {
+  margin: 0;
+}
+
+.edit-todo button {
+  padding: 1rem 1.3rem;
 }
