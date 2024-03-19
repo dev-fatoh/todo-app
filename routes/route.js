@@ -6,6 +6,7 @@ const {
   add_todos,
   find_todo,
   edit_todos,
+  delete_todo,
 } = require("../controllers/index");
 
 router.get("/", get_todos);
@@ -20,5 +21,8 @@ router.get("/todos/:id", find_todo);
 //NOTE: update todo
 
 router.post("/todos/:id", edit_todos);
+//NOTE: delete todo
+
+router.delete("/todos/:id", delete_todo);
 
 module.exports = router;

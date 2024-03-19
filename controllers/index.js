@@ -46,3 +46,11 @@ exports.edit_todos = (req, res) => {
     .then(() => res.redirect("/"))
     .catch((err) => res.send(err.message));
 };
+
+exports.delete_todo = (req, res) => {
+  db.Todo.destroy({
+    where: {
+      id: req.params.id,
+    },
+  }).then((todo) => res.status(204).send(`todo deleted ${todo.id}`));
+};
